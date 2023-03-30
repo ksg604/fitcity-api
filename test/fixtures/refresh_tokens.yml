@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  encrypted_token: someuniquejwt12345
+  user: one
+
+two:
+  encrypted_token: someuniquejwt123455
+  user: two

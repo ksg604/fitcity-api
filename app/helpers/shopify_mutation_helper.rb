@@ -1,0 +1,2 @@
+module ShopifyMutationHelper
+end

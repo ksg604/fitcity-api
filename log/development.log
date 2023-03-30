@@ -1,0 +1,303 @@
+Started POST "/api/users/refresh" for 10.0.0.31 at 2023-03-28 22:20:47 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20221222215748_create_users.rb
+20221228090828_create_refresh_tokens.rb
+20230127044632_create_password_reset_tokens.rb
+20230203005119_add_cart_id_to_user.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:20:47 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20221222215748_create_users.rb
+20221228090828_create_refresh_tokens.rb
+20230127044632_create_password_reset_tokens.rb
+20230203005119_add_cart_id_to_user.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221222215748)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221222215748"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRefreshTokens (20221228090828)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "refresh_tokens" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "encrypted_token" varchar, "user_id" integer NOT NULL, "exp" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_279e9a0091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_refresh_tokens_on_encrypted_token" ON "refresh_tokens" ("encrypted_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_refresh_tokens_on_user_id" ON "refresh_tokens" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221228090828"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePasswordResetTokens (20230127044632)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "password_reset_tokens" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "encrypted_token" varchar, "exp" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_1dfd31e72f"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_password_reset_tokens_on_user_id" ON "password_reset_tokens" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_password_reset_tokens_on_encrypted_token" ON "password_reset_tokens" ("encrypted_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230127044632"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCartIdToUser (20230203005119)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "cart_id" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230203005119"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-29 05:21:14.341932"], ["updated_at", "2023-03-29 05:21:14.341932"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/users/refresh" for 10.0.0.31 at 2023-03-28 22:21:24 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#refresh as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:21:25 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+  
+TypeError (Parameter 'shop': Expected type String, got type NilClass
+Caller: /Users/dev/projects/fitcity/backend/app/controllers/shopify_query_controller.rb:45
+Definition: /Users/dev/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/shopify_api-12.2.1/lib/shopify_api/clients/graphql/storefront.rb:9):
+  
+app/controllers/shopify_query_controller.rb:45:in `new'
+app/controllers/shopify_query_controller.rb:45:in `get_shopify_client'
+Started POST "/api/users/refresh" for 10.0.0.31 at 2023-03-28 22:25:46 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#refresh as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1813)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:25:46 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 453ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 16042)
+
+
+Started GET "/api/products/footwear" for 10.0.0.31 at 2023-03-28 22:25:51 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_notorious_lifters as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 427ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 3328)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:25:52 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 168ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+Started GET "/api/products/footwear" for 10.0.0.31 at 2023-03-28 22:25:53 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_notorious_lifters as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 176ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3083)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:25:56 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 161ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3537)
+
+
+Started GET "/api/products/knee-sleeves" for 10.0.0.31 at 2023-03-28 22:25:57 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_knee_sleeves as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 343ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 4180)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:26:00 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 201ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3477)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-28 22:26:07 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 176ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 3482)
+
+
+Started GET "/api/products/footwear" for 10.0.0.31 at 2023-03-28 22:26:07 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_notorious_lifters as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 167ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3081)
+
+
+Started GET "/api/products/knee-sleeves" for 10.0.0.31 at 2023-03-28 22:26:08 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_knee_sleeves as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 169ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4229)
+
+
+Started POST "/" for 10.0.0.31 at 2023-03-28 22:52:47 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/api/users/refresh" for 10.0.0.31 at 2023-03-29 00:33:09 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#refresh as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1813)
+
+
+Started GET "/api/products/lifting-belts" for 10.0.0.31 at 2023-03-29 00:33:15 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShopifyQueryController#get_sbd_belt as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 451ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 13296)
+
+
+Started GET "/api/products/footwear" for 10.0.0.31 at 2023-03-29 00:40:55 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShopifyQueryController#get_notorious_lifters as */*
+  Parameters: {"shopify_query"=>{}}
+Completed 200 OK in 433ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 14032)
+
+
+Started POST "/api/users/refresh" for 10.0.0.31 at 2023-03-29 00:40:59 -0700
+Cannot render console from 10.0.0.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#refresh as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 658)
+
+

@@ -1,0 +1,2 @@
+module ShopifyAuthHelper
+end

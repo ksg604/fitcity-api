@@ -1,8 +1,7 @@
 class User < ApplicationRecord
 
   # users.password_digest in the database is a :string
-  require "BCrypt"
-  require "Errors"
+  include BCrypt
 
   has_secure_password
   
@@ -33,6 +32,7 @@ class User < ApplicationRecord
   # end
 
   def init_cart
+    require "Errors"
     @client = ShopifyAPI::Clients::Graphql::Storefront.new(Rails.application.credentials.shopify.shop_url, Rails.application.credentials.shopify.storefront_api_token)
 
     mutation = <<-MUTATION
@@ -60,6 +60,7 @@ class User < ApplicationRecord
   end
 
   def create_customer 
+    require "Errors"
     mutation =<<~MUTATION
       mutation customerCreate($input: CustomerCreateInput!) {
         customerCreate(input: $input) {

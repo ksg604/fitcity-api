@@ -1,5 +1,6 @@
 module Jwt
-  module Authenticator    
+  module Authenticator
+        
     module_function
     def authenticate(headers)
       require_relative "./error/Errors"
@@ -75,7 +76,7 @@ module Jwt
   module Expiry
     module_function
     def expiry
-      20.seconds
+      30.minutes
     end
   end
 
@@ -93,7 +94,8 @@ module Jwt
   module Secret
     module_function
     def secrets
-      Rails.application.secrets.secret_key_base
+      Rails.application.credentials.secret_key_base
+      # Rails.application.secrets.secret_key_base
     end
   end
 

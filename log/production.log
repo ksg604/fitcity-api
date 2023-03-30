@@ -1,0 +1,7 @@
+W, [2023-03-30T00:55:24.525011 #25391]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2023-03-30T00:55:24.557303 #25391]  INFO -- : Migrating to CreateUsers (20221222215748)
+I, [2023-03-30T00:55:24.565211 #25391]  INFO -- : Migrating to CreateRefreshTokens (20221228090828)
+I, [2023-03-30T00:55:24.568892 #25391]  INFO -- : Migrating to CreatePasswordResetTokens (20230127044632)
+I, [2023-03-30T00:55:24.572133 #25391]  INFO -- : Migrating to AddCartIdToUser (20230203005119)
+W, [2023-03-30T00:56:11.217702 #25438]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-03-30T00:58:15.364007 #25518]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".

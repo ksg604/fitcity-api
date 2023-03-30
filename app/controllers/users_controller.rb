@@ -143,7 +143,6 @@ class UsersController < ApplicationController
   end
 
   def get_cart
-  
     shopify_res = @client.query(query: helpers.get_cart_query(@user.cart_id))
     # If we get no cart from the Shopify API, create a new cart and make the query for that
     if shopify_res.body["data"]["cart"].nil?

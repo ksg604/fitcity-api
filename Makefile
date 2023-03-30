@@ -1,3 +1,9 @@
+.PHONY: start
+start:
+	-@bin/rails db:migrate
+	-@bin/rails db:seed
+	-@bin/rails s -p 3001
+
 .PHONY: start-https
 start-https:
 	-@bundle install

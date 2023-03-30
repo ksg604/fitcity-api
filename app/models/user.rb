@@ -1,7 +1,7 @@
 class User < ApplicationRecord
 
   # users.password_digest in the database is a :string
-  include BCrypt
+ extend BCrypt
 
   has_secure_password
   

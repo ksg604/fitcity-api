@@ -2,3 +2,4 @@ config/master.key
 .env
 tmp/*
 tmp/cache
+*.env

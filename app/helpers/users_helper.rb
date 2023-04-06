@@ -17,6 +17,10 @@ module UsersHelper
       line
     }
     cart["lines"] = lines
+    cart["totalQuantity"] = lines.reduce(0) { |sum, line| 
+      sum += line["quantity"]
+      sum
+    }
     cart
   end
 
